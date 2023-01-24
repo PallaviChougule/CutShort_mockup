@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Onboard2</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    #login-form {
+      width: 300px;
+      margin: 100px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #2317cf;
+      color: #fff;
+      width:300px;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .next-page-button {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: blue;
+        border-radius: 50%; 
+        width: 50px;
+        height: 50px;
+        line-height: 50px; 
+        display: block;
+        margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <form id="login-form" action="login.php" method="post">
+ <button class="next-page-button" onclick="window.location.href='nextpage.html'">2</button>
+ <center><h3>Let's set up a home for your all work  </h3></center>   
+ <center><h4>You can always change them later</h4> </center>
+    <label>Workspace </label>   
+    <input type="text" placeholder="Eden" name="username" required>  
+    <label>Workspace URL <p>(optional)</p> </label>   
+    <input type="text" placeholder="www.eden.com/ Example" name="username" required>
+    <input type="submit" value="Create Workspace">
+ </form>
+ </body>
